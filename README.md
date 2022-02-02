@@ -6,7 +6,7 @@ local running service. It acts as a HTTP terminating proxy.
 ## Usage
 
 ```bash
-docker run -d --name app-roxy --net host \
+docker run -d --name app-proxy --net host \
            -e REMOTE_URL=http://127.0.0.1:8080 \
            foxylion/nginx-self-signed-https:latest
 ```
